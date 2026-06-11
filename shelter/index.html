@@ -5,36 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/colors.css">
+    <link rel="stylesheet" href="./css/assets.css">
+    <link rel="stylesheet" href="./css/1__header.css">
+    <link rel="stylesheet" href="./css/2__start_screen__section.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <div class="title">Cozy House</div>
-            <div class="subtitle">Shelter for pets in Boston</div>
-        </div>
-        <nav class="header__nav_menu">
-            <ul>
-                <li>
-                    <a href="">About the shelter</a>
-                </li>
-                <li>
-                    <a href="">Our pets</a>
-                </li>
-                <li>
-                    <a href="">Help the shelter</a>
-                </li>
-                <li>
-                    <a href="">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section class="start_screen">
-        <div class="start_screen__content"></div>
-        <div class="start_screen__puppy"></div>
+    <section class="main_section">
+        <header class="header global__content">
+            <a class="header__logo">
+                <div class="header__logo_title">Cozy House</div>
+                <div class="header__logo_subtitle">Shelter for pets in Boston</div>
+            </a>
+            <nav class="header__nav_menu">
+                <ul>
+                    <li>
+                        <a class="assets__paragraph_I" href="#about" data-is-active="1">About the shelter</a>
+                    </li>
+                    <li>
+                        <a class="assets__paragraph_I" href="./pets">Our pets</a>
+                    </li>
+                    <li>
+                        <a class="assets__paragraph_I" href="#help">Help the shelter</a>
+                    </li>
+                    <li>
+                        <a class="assets__paragraph_I" href="#contats">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="start_screen__section global__content">
+            <div class="start_screen__content">
+                <h2 class="start_screen__h2 assets__h2">Not only people need a house</h2>
+                <p class="start_screen__p assets__paragraph_I">We offer to give a chance to a little and nice puppy with
+                    an extremely wide and open heart. He or she will love you more than anybody else in the world, you
+                    will see!</p>
+                <a class="start_screen__button" href="#">Make a friend</a>
+            </div>
+            <div class="start_screen__puppy">
+                <img src="./assets/main_sections/start-screen-puppy.png" alt="">
+            </div>
+        </section>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__wrapper_content">
             <div class="about__pets"></div>
             <div class="about__content">
@@ -76,7 +97,7 @@
             </button>
         </div>
     </section>
-    <section class="help">
+    <section class="help" id="help">
         <div class="help__wrapper_content">
             <div class="heading">How you can help our shelter</div>
             <ul class="help__list">
@@ -123,7 +144,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contacts">
         <div class="footer__wraper_content">
             <div class="footer__contacts">
                 <div class="title">For questions and suggestions</div>
