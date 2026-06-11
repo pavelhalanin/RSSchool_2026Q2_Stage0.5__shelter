@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/1__header.css">
     <link rel="stylesheet" href="./css/2__start_screen__section.css">
     <link rel="stylesheet" href="./css/3__about_section.css">
+    <link rel="stylesheet" href="./css/4__pets_section.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,31 +81,58 @@
             </div>
         </div>
     </section>
-    <section class="pets" id="friend">
-        <div class="pets__wrapper_content">
-            <div class="heading">Our friends who are looking for a house</div>
-            <div class="slider">
-                <button></button>
-                <div class="card">
-                    <div class="slider__card_image"></div>
-                    <div class="slider__card_text">Katrine</div>
-                    <button class="slider__card_button">Learn more</button>
+    <section class="pets__section" id="friend">
+        <div class="global__content">
+            <div class="pets__wrapper_content">
+                <div class="pets__h3 assets__h3">Our friends who <br />are looking for a house</div>
+                <div class="pets__slider">
+                    <div class="pets__slider_arrow_button_block">
+                        <button class="pets__slider_arrow_button">
+                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="pets__slider_cards">
+                        <ul>
+                            <li>
+                                <div class="slider__card_image">
+                                    <img src="./assets/pets_section/Katrine.png" alt="">
+                                </div>
+                                <div class="pets__slider_card_text">Katrine</div>
+                                <button class="pets__slider_card_button assets__button_secondary ">Learn more</button>
+                            </li>
+                            <li>
+                                <div class="slider__card_image">
+                                    <img src="./assets/pets_section/Jennifer.png" alt="">
+                                </div>
+                                <div class="pets__slider_card_text">Jennifer</div>
+                                <button class="pets__slider_card_button assets__button_secondary">Learn more</button>
+                            </li>
+                            <li>
+
+                                <div class="slider__card_image">
+                                    <img src="./assets/pets_section/Woody.png" alt="">
+                                </div>
+                                <div class="pets__slider_card_text">Woody</div>
+                                <button class="pets__slider_card_button assets__button_secondary">Learn more</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pets__slider_arrow_button_block">
+                        <button class="pets__slider_arrow_button">
+                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="slider__card_image"></div>
-                    <div class="slider__card_text">Jennifer</div>
-                    <button class="slider__card_button">Learn more</button>
-                </div>
-                <div class="card">
-                    <div class="slider__card_image"></div>
-                    <div class="slider__card_text">Woody</div>
-                    <button class="slider__card_button">Learn more</button>
-                </div>
-                <button></button>
+                <button class="pets__button assets__button_primary">
+                    Get to know the rest
+                </button>
             </div>
-            <button class="pets__primary_button">
-                Get to know the rest
-            </button>
         </div>
     </section>
     <section class="help" id="help">
