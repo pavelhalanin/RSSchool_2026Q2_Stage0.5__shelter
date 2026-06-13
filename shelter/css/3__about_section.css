@@ -1,5 +1,10 @@
+.about__wrapper {
+  width: var(--max-content-width);
+  margin: 0 auto;
+}
+
 .about__wrapper_content {
-  margin: 80px 175px 100px;
+  padding: 80px 175px 100px;
   display: flex;
   gap: 120px;
 }
