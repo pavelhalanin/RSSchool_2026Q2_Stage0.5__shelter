@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/4__pets_section.css">
     <link rel="stylesheet" href="./css/5__help_section.css">
     <link rel="stylesheet" href="./css/6__donation_section.css">
+    <link rel="stylesheet" href="./css/7__footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -113,7 +114,6 @@
                                 <button class="pets__slider_card_button assets__button_secondary">Learn more</button>
                             </li>
                             <li>
-
                                 <div class="slider__card_image">
                                     <img src="./assets/pets_section/Woody.png" alt="">
                                 </div>
@@ -227,27 +227,37 @@
             </div>
         </div>
     </section>
-    <footer id="contacts">
-        <div class="footer__wraper_content">
-            <div class="footer__contacts">
-                <div class="title">For questions and suggestions</div>
-                <div class="footer__contacts_mail">
-                    <span>email@shelter.com</span>
+    <footer id="contacts" class="footer">
+        <div class="global__content">
+            <div class="footer__wraper_content">
+                <div class="footer__contacts">
+                    <div class="footer__contacts_h assets__h3">For questions and suggestions</div>
+                    <a class="footer__contacts_element" href="mailto:email@shelter.com">
+                        <img src="./assets/footer/icon-email.svg" alt="">
+                        <span class="assets__h4">email@shelter.com</span>
+                    </a>
+                    <a class="footer__contacts_element" href="tel:+136745677554">
+                        <img src="./assets/footer/icon-phone.svg" alt="">
+                        <span class="assets__h4">+13 674 567 75 54</span>
+                    </a>
                 </div>
-                <div class="footer__contacts_phone">
-                    <span>+13 674 567 75 54</span>
+                <div class="footer__locations">
+                    <div class="footer__locations_h assets__h3">We are waiting for your visit</div>
+                    <a class="footer__locations_element" target="_blank"
+                        href="https://maps.app.goo.gl/LR3DLL6KNnWQ1ZRd8">
+                        <img src="./assets/footer/icon-marker.svg" alt="">
+                        <span class="assets__h4">1 Central Street, Boston (entrance from the store)</span>
+                    </a>
+                    <a class="footer__locations_element" target="_blank"
+                        href="https://maps.app.goo.gl/MeHk4X1EKdm36FYg6">
+                        <img src="./assets/footer/icon-marker.svg" alt="">
+                        <span class="assets__h4">18 South Park, London</span>
+                    </a>
+                </div>
+                <div class="footer__puppy">
+                    <img src="./assets/footer/footer-puppy.png" alt="">
                 </div>
             </div>
-            <div class="footer__locations">
-                <div>We are waiting for your visit</div>
-                <div class="footer__locations_boston">
-                    <span>1 Central Street, Boston (entrance from the store)</span>
-                </div>
-                <div class="footer__locations_london">
-                    <span>18 South Park, London </span>
-                </div>
-            </div>
-            <div class="footer__puppy"></div>
         </div>
     </footer>
 </body>
