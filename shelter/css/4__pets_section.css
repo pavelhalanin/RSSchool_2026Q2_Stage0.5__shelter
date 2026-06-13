@@ -55,8 +55,14 @@
   align-items: center;
 }
 
+.slider__card_image {
+  width: 270px;
+  height: 270px;
+}
+
 .pets__slider_card_text {
   font-family: Georgia;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 6%;
   color: var(--color-dark-l);
