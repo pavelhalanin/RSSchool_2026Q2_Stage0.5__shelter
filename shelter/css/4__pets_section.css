@@ -47,7 +47,7 @@
 .pets__slider_cards > ul > li {
   list-style-type: none;
   width: 270px;
-  background-color: var(--color-light-S);
+  background-color: var(--color-light-s);
 
   display: flex;
   flex-direction: column;
