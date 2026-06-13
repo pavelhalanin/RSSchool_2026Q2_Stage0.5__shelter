@@ -78,6 +78,10 @@
   color: var(--color-dark-s);
 }
 
+.header[data-is-home="false"] .header__nav_menu > ul > li > a {
+  color: var(--color-dark-l);
+}
+
 .header__nav_menu > ul > li > a[data-is-active="1"] {
   border-bottom: 3px solid var(--color-primary);
 }
