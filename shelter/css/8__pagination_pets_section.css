@@ -1,0 +1,24 @@
+.pagination_pets__section {
+  width: calc(var(--max-content-width) - 40px * 2);
+  margin: 0 auto;
+
+  background-color: var(--color-light-l);
+  padding: 80px 40px 100px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.pagination_pets__h {
+  width: 400px;
+  margin: 0 auto;
+  color: var(--color-dark-l);
+  text-align: center;
+}
+
+.pagination_pets__button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
