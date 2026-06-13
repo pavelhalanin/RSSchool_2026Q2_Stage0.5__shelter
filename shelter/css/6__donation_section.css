@@ -20,12 +20,12 @@
 }
 
 .donation__h {
-  color: var(--color-dark-I);
+  color: var(--color-dark-l);
   width: 300px;
 }
 
 .donation__subh {
-  color: var(--color-dark-I);
+  color: var(--color-dark-l);
 }
 
 .donation__button {
@@ -38,7 +38,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 15px;
-  color: var(--color-dark-I);
+  color: var(--color-dark-l);
   background-color: var(--color-primary);
   border-width: 0;
 }

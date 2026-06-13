@@ -11,7 +11,7 @@
 }
 
 .pets__h3 {
-  color: var(--color-dark-I);
+  color: var(--color-dark-l);
   text-align: center;
   max-width: 400px;
   margin: 0 auto;
@@ -59,7 +59,7 @@
   font-family: Georgia;
   font-size: 20px;
   letter-spacing: 6%;
-  color: var(--color-dark-I);
+  color: var(--color-dark-l);
 
   text-align: center;
 }
