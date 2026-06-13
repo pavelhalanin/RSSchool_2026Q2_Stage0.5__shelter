@@ -1,3 +1,8 @@
+.help__wrapper {
+  width: var(--max-content-width);
+  margin: 0 auto;
+}
+
 .help__wrapper_content {
   padding: 80px 40px 100px;
   display: flex;
