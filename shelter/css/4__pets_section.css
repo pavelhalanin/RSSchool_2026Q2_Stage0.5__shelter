@@ -80,6 +80,12 @@
   flex-direction: column;
   gap: 30px;
   align-items: center;
+
+  transition: 0.5s all ease-in-out;
+}
+
+.pets__slider_cards > ul > li:hover {
+  box-shadow: 0px 2px 35px 14px #0d0d0d0a;
 }
 
 .slider__card_image {
