@@ -1,0 +1,18 @@
+.about__wrapper_content {
+  padding: 80px 175px 100px;
+  display: flex;
+  gap: 120px;
+}
+
+.about__content {
+  width: 430px;
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about__h {
+  width: 370px;
+  color: var(--color-dark-l);
+}
