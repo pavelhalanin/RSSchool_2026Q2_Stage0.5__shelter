@@ -87,16 +87,12 @@
   cursor: pointer;
 }
 
-.header__nav_menu > ul > li > button:disabled {
-  cursor: not-allowed;
-}
-
 .header[data-is-home="false"] .header__nav_menu > ul > li > a,
 .header[data-is-home="false"] .header__nav_menu > ul > li > button {
   color: var(--color-dark-l);
 }
 
-.header__nav_menu > ul > li > a[data-is-active="1"],
-.header__nav_menu > ul > li > button[data-is-active="1"] {
-  border-bottom: 3px solid var(--color-primary);
+.header__nav_menu_element--active {
+  cursor: default !important;
+  border-bottom: 3px solid var(--color-primary) !important;
 }
