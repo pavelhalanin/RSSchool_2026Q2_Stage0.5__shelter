@@ -26,18 +26,10 @@
 .start_screen__button {
   width: calc(207px - 1px * 2);
   height: calc(52px - 1px * 2);
-  background-color: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-dark-3xl);
-  border-radius: 100px;
 
-  text-decoration: none;
+  color: var(--color-dark-3xl);
+
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-family: Georgia;
-  font-size: 17px;
-  line-height: 130%;
-  letter-spacing: 6%;
 }

@@ -39,6 +39,8 @@
 }
 
 .pets__slider_arrow_button:not(:disabled):hover {
+  cursor: pointer;
+
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
@@ -85,6 +87,7 @@
 }
 
 .pets__slider_cards > ul > li:hover {
+  cursor: pointer;
   box-shadow: 0px 2px 35px 14px #0d0d0d0a;
 }
 
@@ -106,6 +109,10 @@
 .pets__slider_card_button {
   width: 187px;
   margin-bottom: 30px;
+}
+
+.pets__slider_card_button:hover {
+  cursor: pointer;
 }
 
 .pets__button {

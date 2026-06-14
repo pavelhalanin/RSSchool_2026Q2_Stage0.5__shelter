@@ -85,9 +85,11 @@
   letter-spacing: 6%;
 
   transition: 0.5s all ease-in-out;
+  text-decoration: none;
 }
 
 .assets__button_primary:hover {
+  cursor: pointer;
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
