@@ -43,6 +43,13 @@
   color: var(--color-dark-l);
   background-color: var(--color-primary);
   border-width: 0;
+
+  text-decoration: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.donation__button:hover {
+  background-color: var(--color-primary-light);
 }
 
 .donation__button > span {
