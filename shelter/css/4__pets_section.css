@@ -1,7 +1,4 @@
 .pets__section {
-  width: var(--max-content-width);
-  margin: 0 auto;
-
   background-color: var(--color-light-l);
 }
 

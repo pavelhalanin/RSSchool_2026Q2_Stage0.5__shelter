@@ -1,8 +1,10 @@
 .pagination_pets__section {
-  width: calc(var(--max-content-width) - 40px * 2);
-  margin: 0 auto;
-
   background-color: var(--color-light-l);
+}
+
+.pagination_pets__content_wrapper {
+  width: calc(1200px);
+  margin: 0 auto;
   padding: 80px 40px 100px;
 
   display: flex;
