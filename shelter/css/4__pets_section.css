@@ -117,4 +117,5 @@
 
 .pets__button {
   width: 261px;
+  display: flex;
 }

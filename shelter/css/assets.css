@@ -72,11 +72,18 @@
 }
 
 .assets__button_primary {
+  all: unset;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 207px;
   height: 52px;
   border: 2px solid var(--color-primary);
   border-radius: 100px;
   background-color: var(--color-primary);
+  color: var(--color-dark-3xl);
 
   font-family: Georgia;
   font-weight: 400;
@@ -86,6 +93,10 @@
 
   transition: 0.5s all ease-in-out;
   text-decoration: none;
+}
+
+button.assets__button_primary {
+  width: calc(207px - 2px * 2);
 }
 
 .assets__button_primary:hover {
