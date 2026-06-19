@@ -1,3 +1,4 @@
+@media screen and (min-width: 1280px) {
 .help__wrapper_content {
   padding: 80px 40px 100px;
   display: flex;
@@ -39,4 +40,5 @@
 .help__list_text {
   display: block;
   text-align: center;
+}
 }

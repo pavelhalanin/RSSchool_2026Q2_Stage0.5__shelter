@@ -1,3 +1,4 @@
+@media screen and (min-width: 1280px) {
 .donation__wrapper {
   background-color: var(--color-light-l);
 }
@@ -64,4 +65,5 @@
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0;
+}
 }

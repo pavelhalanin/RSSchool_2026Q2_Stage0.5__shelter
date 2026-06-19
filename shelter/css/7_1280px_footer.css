@@ -1,9 +1,10 @@
+@media screen and (min-width: 1280px) {
 .footer {
   background:
     url(../assets/main_sections/start-screen-gradient-background.png) 0% 0% /
       110px 110px repeat,
     /* url(../assets/main_sections/start-screen-background.png), */
-    radial-gradient(70% 160% at 0% 0%, #5b483a 0%, #262425 100%);
+      radial-gradient(70% 160% at 0% 0%, #5b483a 0%, #262425 100%);
 }
 
 .footer__wraper_content {
@@ -86,4 +87,5 @@
 .footer__puppy img {
   width: 300px;
   height: 310px;
+}
 }

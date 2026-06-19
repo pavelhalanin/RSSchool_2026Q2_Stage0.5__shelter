@@ -1,3 +1,4 @@
+@media screen and (min-width: 1280px) {
 .about__wrapper_content {
   padding: 80px 175px 100px;
   display: flex;
@@ -15,4 +16,5 @@
 .about__h {
   width: 370px;
   color: var(--color-dark-l);
+}
 }

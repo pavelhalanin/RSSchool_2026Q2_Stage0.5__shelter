@@ -1,3 +1,4 @@
+@media screen and (min-width: 1280px) {
 .pets__section {
   background-color: var(--color-light-l);
 }
@@ -119,4 +120,5 @@
   width: calc(261px - 2px * 2);
   height: calc(52px - 2px * 2);
   display: flex;
+}
 }
