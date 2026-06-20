@@ -40,5 +40,11 @@
 .help__list_text {
   display: block;
   text-align: center;
+
+  font-family: var(--h4--font-family);
+  font-weight: var(--h4--font-weight);
+  font-size: var(--h4--font-size);
+  line-height: var(--h4--line-height);
+  letter-spacing: var(--h4--letter-spacing);
 }
 }

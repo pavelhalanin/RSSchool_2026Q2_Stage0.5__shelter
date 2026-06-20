@@ -73,13 +73,34 @@
     <link rel="stylesheet" href="./css/global.css?nocache=2026-06-16_20-55">
     <link rel="stylesheet" href="./css/colors.css?nocache=2026-06-16_20-55">
     <link rel="stylesheet" href="./css/assets.css?nocache=2026-06-16_20-55">
-    <link rel="stylesheet" href="./css/1_1280px_header.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/2_1280px_start_screen__section.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/3_1280px_about_section.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/4_1280px_pets_section.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/5_1280px_help_section.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/6_1280px_donation_section.css?nocache=2026-06-19_21-10">
-    <link rel="stylesheet" href="./css/7_1280px_footer.css?nocache=2026-06-19_21-10">
+
+    <link rel="stylesheet" href="./css/media/0320px/1__header.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/1__header.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/1__header.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/2__start_screen__section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/2__start_screen__section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/2__start_screen__section.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/3__about_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/3__about_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/3__about_section.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/4__pets_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/4__pets_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/4__pets_section.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/5__help_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/5__help_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/5__help_section.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/6__donation_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/6__donation_section.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/6__donation_section.css?nocache=2026-06-20_15-00">
+
+    <link rel="stylesheet" href="./css/media/0320px/7__footer.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/0768px/7__footer.css?nocache=2026-06-20_15-00">
+    <link rel="stylesheet" href="./css/media/1280px/7__footer.css?nocache=2026-06-20_15-00">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,12 +111,17 @@
 <body>
     <section class="main_section">
         <header class="header">
-            <div class="global__content">
+            <div class="header__content">
                 <!-- Task: On the Main page Empty links: the logo -->
                 <a class="header__logo" href="">
                     <h1 class="header__logo_title">Cozy House</h1>
                     <div class="header__logo_subtitle">Shelter for pets in Boston</div>
                 </a>
+                <button class="header__burger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
                 <nav class="header__nav_menu">
                     <ul>
                         <li>
@@ -122,27 +148,33 @@
                 </nav>
             </div>
         </header>
-        <section class="start_screen__section global__content">
-            <div class="start_screen__content">
-                <h2 class="start_screen__h2 assets__h2">Not only people need a house</h2>
-                <p class="start_screen__p assets__paragraph_I">We offer to give a chance to a little and nice puppy with
-                    an extremely wide and open heart. He or she will love you more than anybody else in the world, you
-                    will see!</p>
-                <a class="start_screen__button assets__button_primary" href="#friend">Make a friend</a>
-            </div>
-            <div class="start_screen__puppy">
-                <img src="./assets/main_sections/start-screen-puppy.png" alt="">
+        <section class="start_screen__section">
+            <div class="start_screen__wrapper">
+                <div class="start_screen__content">
+                    <h2 class="start_screen__h2">
+                        <span>Not only people</span>
+                        <span>need a house</span>
+                    </h2>
+                    <p class="start_screen__p assets__paragraph_I">We offer to give a chance to a little and nice puppy with
+                        an extremely wide and open heart. He or she will love you more than anybody else in the world, you
+                        will see!</p>
+                    <a class="start_screen__button" href="#friend">Make a friend</a>
+                </div>
+                <div class="start_screen__puppy">
+                    <img src="./assets/main_sections/start-screen-puppy.png" alt="">
+                </div>
             </div>
         </section>
     </section>
     <section id="about" class="about__wrapper">
-        <div class="global__content">
+   
             <div class="about__wrapper_content">
-                <div class="about__pets">
-                    <img src="./assets/about_section/pets.png" alt="">
-                </div>
+                
                 <div class="about__content">
-                    <h2 class="about__h assets__h3">About the shelter “Cozy House”</h2>
+                    <h2 class="about__h">
+                        <span>About the shelter</span>
+                        <span>“Cozy House”</span>
+                    </h2>
                     <div class="assets__paragraph_I">Currently we have 121 dogs and 342 cats on our hands and statistics
                         show that
                         only 20% of them will find a family. The others will continue to live with us and will be
@@ -156,22 +188,17 @@
                         care of the animals, they become attached to the pets and would hardly ever leave them alone.
                     </div>
                 </div>
+                <div class="about__pets">
+                    <img src="./assets/about_section/pets.png" alt="">
+                </div>
             </div>
-        </div>
+     
     </section>
     <section class="pets__section" id="friend">
-        <div class="global__content">
+
             <div class="pets__wrapper_content">
                 <h2 class="pets__h3 assets__h3">Our friends who <br> are looking for a house</h2>
                 <div class="pets__slider">
-                    <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button">
-                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
-                            </svg>
-                        </button>
-                    </div>
                     <div class="pets__slider_cards">
                         <ul>
                             <li>
@@ -206,99 +233,107 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button">
-                            <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
-                            </svg>
-                        </button>
+                    <div class="pets__slider_arrows">
+                        <div class="pets__slider_arrow_button_block">
+                            <button class="pets__slider_arrow_button">
+                                <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="pets__slider_arrow_button_block">
+                            <button class="pets__slider_arrow_button">
+                                <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <a class="pets__button assets__button_primary" href="./pets/">
+                <a class="pets__button" href="./pets/">
                     Get to know the rest
                 </a>
             </div>
-        </div>
+      
     </section>
     <section id="help" class="help__wrapper">
-        <div class="global__content">
+
             <div class="help__wrapper_content">
-                <h2 class="help__h3 assets__h3">How you can help our shelter</h2>
+                <h2 class="help__h3 assets__h3">How you can help <br> our shelter</h2>
                 <div class="help__list">
                     <ul>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-pet-food.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Pet food</span>
+                            <span class="help__list_text">Pet food</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-transportation.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Transportation</span>
+                            <span class="help__list_text">Transportation</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-toys.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Toys</span>
+                            <span class="help__list_text">Toys</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-bowls-and-cups.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Bowls and cups</span>
+                            <span class="help__list_text">Bowls and cups</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-shampoos.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Shampoos</span>
+                            <span class="help__list_text">Shampoos</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-vitamins.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Vitamins</span>
+                            <span class="help__list_text">Vitamins</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-medicines.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Medicines</span>
+                            <span class="help__list_text">Medicines</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-collars-leashes.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Collars / leashes</span>
+                            <span class="help__list_text">Collars / leashes</span>
                         </li>
                         <li>
                             <div class="help__list_image_block">
                                 <img src="./assets/help_section/icon-sleeping-area.svg" alt="">
                             </div>
-                            <span class="help__list_text assets__h4">Sleeping areas</span>
+                            <span class="help__list_text">Sleeping areas</span>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
+      
     </section>
     <section class="donation__wrapper">
-        <div class="global__content">
+
             <div class="donation__wrapper_content">
-                <div class="donation__donation_dog">
-                    <img src="./assets/donation_section/donation-dog.png" alt="">
-                </div>
+                
                 <div class="donation__content">
-                    <h2 class="donation__h assets__h3">You can also make a donation</h2>
-                    <div class="donation__subh assets__h5">Name of the bank / Type of bank account</div>
+                    <h2 class="donation__h assets__h3">You can also <br>make a donation</h2>
+                    <div class="donation__subh">Name of the bank / Type of bank account</div>
                     <!-- Task: On the Main page Empty links: the bank card number in the In addition block -->
                     <a class="donation__button" href="">
                         <img src="./assets/donation_section/credit-card.svg" alt="">
-                        <span class="assets__h4">
+                        <span>
                             8380 2880 8028 8791 7435
                         </span>
                     </a>
@@ -309,22 +344,27 @@
                             vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</i>
                     </div>
                 </div>
-            </div>
+                <div class="donation__donation_dog">
+                    <img src="./assets/donation_section/donation-dog.png" alt="">
+                </div>
+       
         </div>
     </section>
     <footer id="contacts" class="footer">
-        <div class="global__content">
+     
             <div class="footer__wraper_content">
                 <div class="footer__contacts">
                     <h2 class="footer__contacts_h assets__h3">For questions and suggestions</h2>
-                    <a class="footer__contacts_element" href="mailto:email@shelter.com">
-                        <img src="./assets/footer/icon-email.svg" alt="">
-                        <span class="assets__h4">email@shelter.com</span>
-                    </a>
-                    <a class="footer__contacts_element" href="tel:+136745677554">
-                        <img src="./assets/footer/icon-phone.svg" alt="">
-                        <span class="assets__h4">+13 674 567 75 54</span>
-                    </a>
+            
+                        <a class="footer__contacts_element assets__h4" href="mailto:email@shelter.com">
+                            <img src="./assets/footer/icon-email.svg" alt="">
+                            <span class="assets__h4">email@shelter.com</span>
+                        </a>
+                        <a class="footer__contacts_element assets__h4" href="tel:+136745677554">
+                            <img src="./assets/footer/icon-phone.svg" alt="">
+                            <span class="assets__h4">+13 674 567 75 54</span>
+                        </a>
+             
                 </div>
                 <div class="footer__locations">
                     <h2 class="footer__locations_h assets__h3">We are waiting for your visit</h2>
@@ -343,7 +383,7 @@
                     <img src="./assets/footer/footer-puppy.png" alt="">
                 </div>
             </div>
-        </div>
+       
     </footer>
     <script src="./index.js?nocache=2026-06-16_20-55"></script>
 </body>

@@ -14,9 +14,12 @@
   padding: 30px 0;
 }
 
-.header > .global__content {
+.header__content {
   display: flex;
   justify-content: space-between;
+
+  width: 1200px;
+  margin: 0 auto;
 }
 
 /* logo */
@@ -56,6 +59,10 @@
 
 .header[data-is-home="false"] .header__logo_subtitle {
   color: var(--color-dark-l);
+}
+
+.header__burger_menu {
+  display: none;
 }
 
 /* nav menu */
