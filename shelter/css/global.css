@@ -14,3 +14,14 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+
+a,
+button {
+  transition: all 0.5s ease-in-out;
+}
+
+a:hover,
+button:hover {
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}

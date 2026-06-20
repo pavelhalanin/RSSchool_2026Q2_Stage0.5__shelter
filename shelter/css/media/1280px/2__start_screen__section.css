@@ -65,3 +65,7 @@
     text-decoration: none;
   }
 }
+
+.start_screen__button:hover {
+  background-color: var(--color-primary-light);
+}
