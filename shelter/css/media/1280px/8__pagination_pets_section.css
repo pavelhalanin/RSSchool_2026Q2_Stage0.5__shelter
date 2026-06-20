@@ -21,6 +21,14 @@
   .pagination_pets__button {
     gap: 20px;
   }
+
+  .pagination_pets__h {
+    font-family: var(--h3--font-family);
+    font-weight: var(--h3--font-weight);
+    font-size: var(--h3--font-size);
+    line-height: var(--h3--line-height);
+    letter-spacing: var(--h3--letter-spacing);
+  }
 }
 
 .pagination_pets__section {
@@ -33,9 +41,11 @@
 }
 
 .pagination_pets__h {
-  margin: 0 auto;
   color: var(--color-dark-l);
   text-align: center;
+
+  padding: 0;
+  margin: 0 auto;
 }
 
 .pagination_pets__content_wrapper {

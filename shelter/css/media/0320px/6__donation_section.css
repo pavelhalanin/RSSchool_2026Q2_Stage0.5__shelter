@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .donation__wrapper_content {
     width: 300px;
     margin: 0 auto;
@@ -8,10 +8,6 @@
     display: flex;
     flex-direction: column;
     gap: 42px;
-  }
-
-  .assets__h3 {
-    text-align: center;
   }
 
   .donation__subh {
@@ -28,6 +24,20 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .donation__h {
+    color: var(--color-dark-l);
+    text-align: center;
+
+    font-family: var(--h3-mobile--font-family);
+    font-weight: var(--h3-mobile--font-weight);
+    font-size: var(--h3-mobile--font-size);
+    line-height: var(--h3-mobile--line-height);
+    letter-spacing: var(--h3-mobile--letter-spacing);
+
+    margin: 0;
+    padding: 0;
   }
 
   .donation__button {

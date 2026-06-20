@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .footer {
     background:
       url(../../../assets/main_sections/start-screen-gradient-background.png) 0%
@@ -57,9 +57,20 @@
 
   .footer__locations_h {
     width: 270px;
-    margin: 0 auto;
+    display: block;
     color: var(--color-light-xl);
     text-align: center;
+
+    font-family: var(--h3-mobile--font-family);
+    font-weight: var(--h3-mobile--font-weight);
+    font-size: var(--h3-mobile--font-size);
+    line-height: var(--h3-mobile--line-height);
+    letter-spacing: var(--h3-mobile--letter-spacing);
+
+    margin: 0;
+    padding: 0;
+
+    margin: 0 auto;
   }
 
   .footer__locations_element {

@@ -78,13 +78,6 @@ https://www.figma.com/file/Yk6EnbY63FyG2PJTFkJDMh/shelter
   padding: 0;
 }
 
-@media screen and (max-width: 320px) {
-  .assets__h3 {
-  font-weight: 400;
-  font-size: 25px;
-}
-}
-
 .assets__h4 {
   font-family: Georgia;
   font-weight: 400;
