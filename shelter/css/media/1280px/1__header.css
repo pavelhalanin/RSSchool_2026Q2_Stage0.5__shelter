@@ -8,12 +8,6 @@
         radial-gradient(70% 160% at 0% 0%, #5b483a 0%, #262425 100%);
   }
 
-  .header {
-    height: 60px;
-    margin: 0 auto;
-    padding: 30px 0;
-  }
-
   .header__content {
     display: flex;
     justify-content: space-between;
@@ -46,19 +40,11 @@
     padding: 0;
   }
 
-  .header[data-is-home="false"] .header__logo_title {
-    color: var(--color-dark-l);
-  }
-
   .header__logo_subtitle {
     font-family: Arial;
     font-size: 13px;
     letter-spacing: 10%;
     color: var(--color-light-xl);
-  }
-
-  .header[data-is-home="false"] .header__logo_subtitle {
-    color: var(--color-dark-l);
   }
 
   .header__burger_menu {
@@ -106,7 +92,21 @@
   }
 }
 
-.header__logo:hover > .header__logo_title {
+.header {
+  height: 60px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.header[data-is-home="false"] .header__logo_title {
+  color: var(--color-dark-l);
+}
+
+.header[data-is-home="false"] .header__logo_subtitle {
+  color: var(--color-dark-l);
+}
+
+.header__logo > .header__logo_title {
   transition: all 0.5s ease-in-out;
 }
 

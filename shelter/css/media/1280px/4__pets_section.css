@@ -59,10 +59,11 @@
   }
 
   .pets__slider_cards[data-is-home="false"] > ul {
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 0;
-    row-gap: 30px;
+    gap: 40px 30px !important;
+    row-gap: 30px !important;
 
     padding: 15px 0;
   }

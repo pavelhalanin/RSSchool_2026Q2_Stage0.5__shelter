@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+  .pagination_pets__content_wrapper {
+    gap: 42px;
+  }
+
+  .pagination_pets__content_wrapper {
+    padding: 42px 10px;
+  }
+
+  .pets__slider_cards[data-is-home="false"] > ul {
+    display: flex;
+    gap: 30px 40px;
+  }
+
+  .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(1),
+  .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(2),
+  .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(3) {
+    display: flex;
+  }
+}
