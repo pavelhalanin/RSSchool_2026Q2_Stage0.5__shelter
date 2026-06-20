@@ -17,4 +17,8 @@
   .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(3) {
     display: flex;
   }
+
+  .pagination_pets__button {
+    gap: 10px;
+  }
 }

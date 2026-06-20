@@ -70,4 +70,8 @@
     height: 2px;
     background-color: var(--color-primary);
   }
+
+  .header[data-is-home="false"] .header__burger_menu > span {
+    background-color: black;
+  }
 }

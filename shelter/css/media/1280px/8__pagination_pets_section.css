@@ -3,12 +3,6 @@
     gap: 45px;
   }
 
-  .pagination_pets__button {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-
   .pagination_pets__content_wrapper {
     padding: 80px 40px 100px;
   }
@@ -23,10 +17,19 @@
   .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(8) {
     display: flex;
   }
+
+  .pagination_pets__button {
+    gap: 20px;
+  }
 }
 
 .pagination_pets__section {
   background-color: var(--color-light-l);
+}
+
+.pagination_pets__button {
+  display: flex;
+  justify-content: center;
 }
 
 .pagination_pets__h {
@@ -36,6 +39,7 @@
 }
 
 .pagination_pets__content_wrapper {
+  max-width: 1200px;
   margin: 0 auto;
 
   display: flex;

@@ -4,7 +4,7 @@
   }
 
   .pagination_pets__content_wrapper {
-    padding: 80px 30px 70px;
+    padding: 80px 30px 76px;
   }
 
   .pets__slider_cards[data-is-home="false"] > ul {
@@ -19,5 +19,10 @@
   .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(5),
   .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(6) {
     display: flex;
+  }
+
+  .pagination_pets__button {
+    padding-top: 10px;
+    gap: 20px;
   }
 }
