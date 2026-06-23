@@ -5,8 +5,6 @@
         0% / 110px 110px repeat,
       /* url(../../../assets/main_sections/start-screen-background.png), */
         radial-gradient(70% 160% at 0% 0%, #5b483a 0%, #262425 100%);
-
-    padding-top: 30px;
   }
 
   .header__content {
