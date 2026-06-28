@@ -168,3 +168,7 @@
     border-radius: 50%;
   }
 }
+
+body[data-no-scroll-because-modal-is-open="true"] {
+  overflow: hidden;
+}

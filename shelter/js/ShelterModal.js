@@ -17,6 +17,7 @@ class ShelterModal {
 
   static closeModal() {
     document.querySelectorAll(`#${this.id_modal}`).forEach((e) => e.remove());
+    document.body.removeAttribute("data-no-scroll-because-modal-is-open");
   }
 
   static async openModalById(id) {
@@ -64,6 +65,7 @@ class ShelterModal {
       </div>
     `;
 
+    document.body.setAttribute("data-no-scroll-because-modal-is-open", "true");
     document.body.appendChild(DIV);
   }
 }
