@@ -74,7 +74,7 @@
     <link rel="stylesheet" href="./css/colors.css?nocache=2026-06-21_01-40">
     <link rel="stylesheet" href="./css/assets.css?nocache=2026-06-29_02-30">
 
-    <link rel="stylesheet" href="./css/media/0320px/1__header.css?nocache=2026-06-29_02-30">
+    <link rel="stylesheet" href="./css/media/0320px/1__header.css?nocache=2026-06-29-02-45">
     <link rel="stylesheet" href="./css/media/0768px/1__header.css?nocache=2026-06-23_19-27">
     <link rel="stylesheet" href="./css/media/1280px/1__header.css?nocache=2026-06-21_01-40">
 
@@ -114,20 +114,21 @@
 
 <body>
     <section class="main_section">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__content">
                 <!-- Task: On the Main page Empty links: the logo -->
                 <a class="header__logo" href="">
                     <h1 class="header__logo_title">Cozy House</h1>
                     <div class="header__logo_subtitle">Shelter for pets in Boston</div>
                 </a>
-                <button class="header__burger_menu" id="burger" onclick="ShelterBurger.openOrClose()">
+                <button class="header__burger_menu" onclick="ShelterBurger.openOrClose()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <script src="./js/ShelterBurger.js"></script>
-                <nav class="header__nav_menu" id="nav_menu">
+                <script src="./js/ShelterBurger.js?nocache=2026-06-29-02-45"></script>
+                <button class="header__nav_menu_overlay" onclick="ShelterBurger.openOrClose()"></button>
+                <nav class="header__nav_menu">
                     <ul>
                         <li>
                             <button disabled class="header__nav_menu_element--active assets__paragraph_I" onclick="ShelterBurger.openOrClose()">

@@ -1,30 +1,21 @@
 class ShelterBurger {
-  static id_menu = "nav_menu";
-  static id_burger = "burger";
+  static id_header = "header";
 
   static openOrClose() {
-    const MENU = document.getElementById(this.id_menu);
-    const BURGER = document.getElementById(this.id_burger);
+    const HEADER = document.getElementById(this.id_header);
 
-    if (!MENU) {
-      console.error(`Узел не найден: ${this.id_menu}`);
+    if (!HEADER) {
+      console.error(`Узел не найден: ${this.id_header}`);
       return;
     }
 
-    if (!BURGER) {
-      console.error(`Узел не найден: ${this.id_burger}`);
-      return;
-    }
-
-    const IS_OPENED = BURGER.getAttribute("data-is-menu-opened") == "true";
+    const IS_OPENED = HEADER.getAttribute("data-is-menu-opened") == "true";
 
     if (IS_OPENED) {
-      MENU.removeAttribute("data-is-menu-opened");
-      BURGER.removeAttribute("data-is-menu-opened");
+      HEADER.removeAttribute("data-is-menu-opened");
       return;
     }
 
-    MENU.setAttribute("data-is-menu-opened", "true");
-    BURGER.setAttribute("data-is-menu-opened", "true");
+    HEADER.setAttribute("data-is-menu-opened", "true");
   }
 }
