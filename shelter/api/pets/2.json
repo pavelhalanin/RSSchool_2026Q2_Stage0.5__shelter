@@ -1,0 +1,12 @@
+{
+  "id": "2",
+  "name": "Sophia",
+  "img": "/shelter/assets/pagination_pets_section/pets-Sophia.png",
+  "type": "Dog",
+  "breed": "Shih tzu",
+  "description": "Sophia here and I'm looking for my forever home to live out the best years of my life. I am full of energy. Everyday I'm learning new things, like how to walk on a leash, go potty outside, bark and play with toys and I still need some practice.",
+  "age": "1 month",
+  "inoculations": ["parvovirus"],
+  "diseases": ["none"],
+  "parasites": ["none"]
+}

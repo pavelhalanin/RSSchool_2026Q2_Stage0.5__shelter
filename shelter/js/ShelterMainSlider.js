@@ -71,7 +71,7 @@ class ShelterMainSlider {
               </div>
               <div class="pets__slider_card_text">${e.name}</div>
               <button class="pets__slider_card_button assets__button_secondary"
-                onclick="alert('open modal by id = ${e.id}')">
+                onclick="ShelterModal.openModalById('${e.id}')">
                 Learn more
               </button>
             </li>
