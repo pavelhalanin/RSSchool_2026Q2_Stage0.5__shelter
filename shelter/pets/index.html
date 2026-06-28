@@ -90,9 +90,9 @@
     <link rel="stylesheet" href="./../css/media/0768px/4__pets_section.css?nocache=2026-06-21_01-40">
     <link rel="stylesheet" href="./../css/media/1280px/4__pets_section.css?nocache=2026-06-29_00-15">
 
-    <link rel="stylesheet" href="./css/media/0320px/9__modal.css?nocache=2026-06-29_00-15">
-    <link rel="stylesheet" href="./css/media/0768px/9__modal.css?nocache=2026-06-29_00-15">
-    <link rel="stylesheet" href="./css/media/1280px/9__modal.css?nocache=2026-06-29_00-15">
+    <link rel="stylesheet" href="./../css/media/0320px/9__modal.css?nocache=2026-06-29_00-15">
+    <link rel="stylesheet" href="./../css/media/0768px/9__modal.css?nocache=2026-06-29_00-15">
+    <link rel="stylesheet" href="./../css/media/1280px/9__modal.css?nocache=2026-06-29_00-15">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -141,100 +141,58 @@
     <section class="pagination_pets__section">
         <div class="pagination_pets__content_wrapper">
             <h2 class="pagination_pets__h">Our friends who <br> are looking for a house</h2>
-            <div class="pets__slider_cards" data-is-home="false">
-                <ul>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Katrine.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Katrine</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Jennifer.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Jennifer</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Woody.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Woody</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Sophia.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Sophia</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Timmy.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Timmy</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Charly.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Charly</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Scarlett.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Scarlett</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                    <li>
-                        <div class="slider__card_image">
-                            <img src="./../assets/pagination_pets_section/pets-Freddie.png" alt="">
-                        </div>
-                        <div class="pets__slider_card_text">Freddie</div>
-                        <button class="pets__slider_card_button assets__button_secondary"
-                            onclick="alert('nothing')">Learn
-                            more</button>
-                    </li>
-                </ul>
+            <div class="pets__slider_cards" data-is-home="false" id="id_pagination_items">
+               
             </div>
             <div class="pagination_pets__button">
-                <button class="pets__slider_arrow_button assets__h4" onclick="alert('nothing')" disabled>
+                <button
+                    class="pets__slider_arrow_button assets__h4"
+                    onclick="ShelterPagination.firstPage()"
+                    disabled
+                    id="id_first_page_button"
+                >
                     &lt;&lt;
                 </button>
-                <button class="pets__slider_arrow_button assets__h4" onclick="alert('nothing')" disabled>
+                <button
+                    class="pets__slider_arrow_button assets__h4"
+                    onclick="ShelterPagination.prev()"
+                    disabled
+                    id="id_prev_page_button"
+                >
                     &lt;
                 </button>
-                <button class="pets__slider_arrow_button assets__h4" onclick="alert('nothing')" data-is-active="1">
+                <button
+                    class="pets__slider_arrow_button assets__h4"
+                    onclick="alert('nothing')"
+                    data-is-active="1"
+                    id="current_page"
+                >
                     1
                 </button>
-                <button class="pets__slider_arrow_button assets__h4" onclick="alert('nothing')">
+                <button
+                    class="pets__slider_arrow_button assets__h4"
+                    onclick="ShelterPagination.next()"
+                    id="id_next_page_button"
+                >
                     &gt;
                 </button>
-                <button class="pets__slider_arrow_button assets__h4" onclick="alert('nothing')">
+                <button
+                    class="pets__slider_arrow_button assets__h4"
+                    onclick="ShelterPagination.lastPage()"
+                    id="id_last_page_button"
+                >
                     &gt;&gt;
                 </button>
             </div>
         </div>
+        <script src="./../js/ShelterPagination.js?nocache=2026-06-29_00-40"></script>
+        <script src="./../js/ShelterModal.js?nocache=2026-06-28_22-30"></script>
+        <script>
+            (async function() {
+                await ShelterPagination.render();
+                ShelterPagination.viewItemsForPage(1);
+            })();
+        </script>
     </section>
     <footer id="contacts" class="footer">
         <div class="footer__wraper_content">
