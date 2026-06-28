@@ -50,7 +50,13 @@
   }
 
   .pets__slider_cards {
-    width: 100%;
+    display: flex;
+    max-width: 990px;
+    margin: 0 auto;
+
+    overflow: hidden;
+    transform: translateX(0%);
+    z-index: 3;
   }
 
   .pets__slider_cards > ul {
@@ -124,6 +130,8 @@
 
     display: flex;
     justify-content: space-between;
+
+    z-index: 1;
   }
 
   .pets__slider_arrow_button {
@@ -162,7 +170,6 @@
 }
 
 .pets__slider_cards > ul > li {
-  z-index: 3;
   transition: all 0.5s ease-in-out;
 }
 
