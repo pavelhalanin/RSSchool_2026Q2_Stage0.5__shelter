@@ -1,4 +1,6 @@
-const TASKS = [
+const TASKS1 = [
+  `**Maximum score: 110 points**`,
+  ``,
   "### `Main` page (70 points)",
   "",
   "= = =",
@@ -100,4 +102,46 @@ const TASKS = [
   "- [✅] Каждая карточка питомца в блоке **Our Friends** интерактивна при наведении на любую область карточки; ссылки и кнопки имеют стилизацию при наведении/активации помимо `cursor: pointer`; визуальные изменения плавные и не влияют на соседние элементы **+5**",
 ];
 
-console.log(TASKS.join("\n"));
+const TASKS2 = [
+  `**Maximum score: 110 points**`,
+  ``,
+  "### `Main` page (45 points)",
+  ``,
+  `- [✅] Layout matches the design at 1280px **+15**`,
+  `- [✅] Layout matches the design at 768px **+15**`,
+  `- [✅] Layout matches the design at 320px **+15**`,
+  ``,
+  "### `Главная` страница (45 баллов)",
+  ``,
+  `- [✅] Макет соответствует дизайну при 1280px **+15**`,
+  `- [✅] Макет соответствует дизайну при 768px **+15**`,
+  `- [✅] Макет соответствует дизайну при 320px **+15**`,
+  ``,
+  "### `Pets` page (15 points)",
+  ``,
+  `- [✅] Layout matches the design at 1280px **+5**`,
+  `- [✅] Layout matches the design at 768px **+5**`,
+  `- [✅] Layout matches the design at 320px **+5**`,
+  ``,
+  "### Страница `Домашние животные` (15 баллов)",
+  ``,
+  `- [✅] Макет соответствует дизайну при 1280px **+5**`,
+  `- [✅] Макет соответствует дизайну при 768px **+5**`,
+  `- [✅] Макет соответствует дизайну при 320px **+5**`,
+  ``,
+  `### Responsive behavior (50 points)`,
+  ``,
+  `- [✅] No horizontal scroll on either page at any width from 320px to 1280px **+20**`,
+  `- [✅] Layout adapts smoothly between breakpoints - no overlapping, cut-off, or visually broken content on either page **+15**`,
+  `- [✅] The burger icon appears instead of the navigation menu when the viewport is narrower than 768px on both pages **+5** (the menu itself does not need to open at this stage)`,
+  `- [✅] Markup is valid on both pages per <https://validator.w3.org/> **+10**`,
+  ``,
+  `### Адаптивное поведение (50 баллов)`,
+  ``,
+  `- [✅] Отсутствие горизонтальной прокрутки на обеих страницах при любой ширине от 320px до 1280px **+20**`,
+  `- [✅] Макет плавно адаптируется между контрольными точками — нет перекрывающегося, обрезанного или визуально некорректного контента на обеих страницах **+15**`,
+  `- [✅] Значок гамбургера появляется вместо навигационного меню, когда ширина области просмотра меньше 768px на обеих страницах **+5** (само меню на этом этапе открывать не нужно),`,
+  `- [✅] Разметка действительна на обеих страницах согласно <https://validator.w3.org/> **+10**`,
+];
+
+console.log(TASKS2.join("\n"));
