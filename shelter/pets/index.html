@@ -191,6 +191,9 @@
             (async function() {
                 await ShelterPagination.render();
                 ShelterPagination.viewItemsForPage(1);
+                window.addEventListener('resize', function() {
+                    ShelterPagination.viewItemsForPage(1);
+                });
             })();
         </script>
     </section>
