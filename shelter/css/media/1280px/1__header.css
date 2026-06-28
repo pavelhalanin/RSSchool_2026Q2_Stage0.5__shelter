@@ -51,6 +51,10 @@
     display: none;
   }
 
+  .header__nav_menu_overlay {
+    display: none;
+  }
+
   /* nav menu */
 
   .header__nav_menu {
