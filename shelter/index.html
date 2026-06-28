@@ -72,9 +72,9 @@
 
     <link rel="stylesheet" href="./css/global.css?nocache=2026-06-21_01-40">
     <link rel="stylesheet" href="./css/colors.css?nocache=2026-06-21_01-40">
-    <link rel="stylesheet" href="./css/assets.css?nocache=2026-06-21_01-40">
+    <link rel="stylesheet" href="./css/assets.css?nocache=2026-06-29_02-30">
 
-    <link rel="stylesheet" href="./css/media/0320px/1__header.css?nocache=2026-06-23_19-27">
+    <link rel="stylesheet" href="./css/media/0320px/1__header.css?nocache=2026-06-29_02-30">
     <link rel="stylesheet" href="./css/media/0768px/1__header.css?nocache=2026-06-23_19-27">
     <link rel="stylesheet" href="./css/media/1280px/1__header.css?nocache=2026-06-21_01-40">
 
@@ -121,30 +121,31 @@
                     <h1 class="header__logo_title">Cozy House</h1>
                     <div class="header__logo_subtitle">Shelter for pets in Boston</div>
                 </a>
-                <button class="header__burger_menu">
+                <button class="header__burger_menu" id="burger" onclick="ShelterBurger.openOrClose()">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
-                <nav class="header__nav_menu">
+                <script src="./js/ShelterBurger.js"></script>
+                <nav class="header__nav_menu" id="nav_menu">
                     <ul>
                         <li>
-                            <button disabled class="header__nav_menu_element--active assets__paragraph_I">
+                            <button disabled class="header__nav_menu_element--active assets__paragraph_I" onclick="ShelterBurger.openOrClose()">
                                 About the shelter
                             </button>
                         </li>
                         <li>
-                            <a class="assets__paragraph_I" href="./pets">
+                            <a class="assets__paragraph_I" href="./pets" onclick="ShelterBurger.openOrClose()">
                                 Our pets
                             </a>
                         </li>
                         <li>
-                            <a class="assets__paragraph_I" href="#help">
+                            <a class="assets__paragraph_I" href="#help" onclick="ShelterBurger.openOrClose()">
                                 Help the shelter
                             </a>
                         </li>
                         <li>
-                            <a class="assets__paragraph_I" href="#contacts">
+                            <a class="assets__paragraph_I" href="#contacts" onclick="ShelterBurger.openOrClose()">
                                 Contacts
                             </a>
                         </li>
