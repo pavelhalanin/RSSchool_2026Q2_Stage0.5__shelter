@@ -76,7 +76,7 @@ class ShelterMainSlider {
               </button>
             </li>
           `;
-        })}
+        }).join('')}
       </ul>
     `;
   }
