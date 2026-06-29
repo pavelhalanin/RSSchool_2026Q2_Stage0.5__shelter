@@ -1,10 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1279.5px) {
   .pagination_pets__content_wrapper {
     gap: 30px;
-  }
-
-  .pagination_pets__content_wrapper {
     padding: 80px 30px 76px;
+    overflow: hidden;
   }
 
   .pets__slider_cards[data-is-home="false"] > ul {

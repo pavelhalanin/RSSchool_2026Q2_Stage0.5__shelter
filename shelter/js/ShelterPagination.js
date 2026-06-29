@@ -6,6 +6,10 @@ class ShelterPagination {
   static id_next_page_button = "id_next_page_button";
   static id_last_page_button = "id_last_page_button";
 
+  static sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
   static async fetchData() {
     const URI =
       "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
@@ -89,7 +93,22 @@ class ShelterPagination {
     CURRENT_PAGE_ELEMENT.innerHTML = page;
   }
 
-  static viewItemsForPage(page) {
+  static async viewItemsForPage(page) {
+    this.disableAllButtons();
+    const DIV = document.getElementById(this.id_pagination_items);
+    if (!DIV) {
+      console.error(`Узел не найден: #${this.id_pagination_items}`);
+      return;
+    }
+
+    const OLD_PAGE = this.getCurrentPage();
+
+    DIV.style.transform =
+      page > OLD_PAGE ? "translateX(200%)" : "translateX(-200%)";
+    DIV.style.transition = "all 1.5s ease";
+    DIV.style.opacity = "0";
+    await this.sleep(1000);
+
     const LIMIT = this.getLimit();
 
     const ARRAY = document.querySelectorAll(
@@ -111,6 +130,12 @@ class ShelterPagination {
     }
 
     this.setCurrentPage(page);
+
+    DIV.style.transform = "translateX(0%)";
+    DIV.style.opacity = "1";
+
+    await this.sleep(1000);
+    // this.enableAllButtons();
     this.disableButtons();
   }
 
@@ -183,6 +208,74 @@ class ShelterPagination {
       PREV_PAGE_BUTTON.removeAttribute("disabled");
       NEXT_PAGE_BUTTON.setAttribute("disabled", "true");
       LAST_PAGE_BUTTON.setAttribute("disabled", "true");
+      return;
+    }
+
+    FIRST_PAGE_BUTTON.removeAttribute("disabled");
+    PREV_PAGE_BUTTON.removeAttribute("disabled");
+    NEXT_PAGE_BUTTON.removeAttribute("disabled");
+    LAST_PAGE_BUTTON.removeAttribute("disabled");
+  }
+
+  static disableAllButtons() {
+    const FIRST_PAGE_BUTTON = document.getElementById(
+      this.id_first_page_button,
+    );
+    const PREV_PAGE_BUTTON = document.getElementById(this.id_prev_page_button);
+    const NEXT_PAGE_BUTTON = document.getElementById(this.id_next_page_button);
+    const LAST_PAGE_BUTTON = document.getElementById(this.id_last_page_button);
+
+    if (!FIRST_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_first_page_button}`);
+      return;
+    }
+
+    if (!PREV_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_prev_page_button}`);
+      return;
+    }
+
+    if (!NEXT_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_next_page_button}`);
+      return;
+    }
+
+    if (!LAST_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_last_page_button}`);
+      return;
+    }
+
+    FIRST_PAGE_BUTTON.setAttribute("disabled", "true");
+    PREV_PAGE_BUTTON.setAttribute("disabled", "true");
+    NEXT_PAGE_BUTTON.setAttribute("disabled", "true");
+    LAST_PAGE_BUTTON.setAttribute("disabled", "true");
+  }
+
+  static enableAllButtons() {
+    const FIRST_PAGE_BUTTON = document.getElementById(
+      this.id_first_page_button,
+    );
+    const PREV_PAGE_BUTTON = document.getElementById(this.id_prev_page_button);
+    const NEXT_PAGE_BUTTON = document.getElementById(this.id_next_page_button);
+    const LAST_PAGE_BUTTON = document.getElementById(this.id_last_page_button);
+
+    if (!FIRST_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_first_page_button}`);
+      return;
+    }
+
+    if (!PREV_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_prev_page_button}`);
+      return;
+    }
+
+    if (!NEXT_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_next_page_button}`);
+      return;
+    }
+
+    if (!LAST_PAGE_BUTTON) {
+      console.error(`Не найден узел: #${this.id_last_page_button}`);
       return;
     }
 
