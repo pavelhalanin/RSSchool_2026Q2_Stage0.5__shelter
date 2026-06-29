@@ -86,9 +86,9 @@
     <link rel="stylesheet" href="./css/media/0768px/3__about_section.css?nocache=2026-06-21_01-40">
     <link rel="stylesheet" href="./css/media/1280px/3__about_section.css?nocache=2026-06-21_01-40">
 
-    <link rel="stylesheet" href="./css/media/0320px/4__pets_section.css?nocache=2026-06-21_01-40">
-    <link rel="stylesheet" href="./css/media/0768px/4__pets_section.css?nocache=2026-06-21_01-40">
-    <link rel="stylesheet" href="./css/media/1280px/4__pets_section.css?nocache=2026-06-29_00-15">
+    <link rel="stylesheet" href="./css/media/0320px/4__pets_section.css?nocache=2026-06-29_12-45">
+    <link rel="stylesheet" href="./css/media/0768px/4__pets_section.css?nocache=2026-06-29_12-45">
+    <link rel="stylesheet" href="./css/media/1280px/4__pets_section.css?nocache=2026-06-29_12-45">
 
     <link rel="stylesheet" href="./css/media/0320px/5__help_section.css?nocache=2026-06-21_01-40">
     <link rel="stylesheet" href="./css/media/0768px/5__help_section.css?nocache=2026-06-21_01-40">
@@ -209,7 +209,7 @@
                 </div>
                 <div class="pets__slider_arrows">
                     <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.left()">
+                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.leftRight({command: 'right'})">
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
@@ -217,7 +217,7 @@
                         </button>
                     </div>
                     <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.left()">
+                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.leftRight({command: 'left'})">
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
@@ -230,10 +230,10 @@
                 Get to know the rest
             </a>
         </div>
-        <script src="./js/ShelterMainSlider.js?nocache=2026-06-28_22-40"></script>
+        <script src="./js/ShelterMainSlider.js?nocache=2026-06-29_12-45"></script>
         <script src="./js/ShelterModal.js?nocache=2026-06-28_22-30"></script>
         <script>
-            ShelterMainSlider.left();
+            ShelterMainSlider.leftRight();
         </script>
     </section>
     <section id="help" class="help__wrapper">

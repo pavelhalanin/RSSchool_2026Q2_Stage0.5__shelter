@@ -1,6 +1,10 @@
 class ShelterMainSlider {
   static id_slider = "main_pets_slider";
 
+  static sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
   static async fetchData() {
     const URI = "/shelter/api/pets.json";
     const RESPONSE = await fetch(URI);
@@ -53,12 +57,22 @@ class ShelterMainSlider {
     return array.slice(0, 3);
   }
 
-  static async left() {
+  static async leftRight(
+    params = {
+      command: "left",
+    },
+  ) {
     const DIV = document.getElementById(this.id_slider);
 
     if (!DIV) {
       console.error(`Узел не найден: #${this.id_slider}`);
     }
+
+    DIV.style.transform =
+      params.command == "left" ? "translateX(200%)" : "translateX(-200%)";
+    DIV.style.transition = "all 1.5s ease";
+    DIV.style.opacity = "0";
+    await this.sleep(600);
 
     const RANDOM_ARRAY = await this.getRandom3();
     DIV.innerHTML = `
@@ -76,8 +90,11 @@ class ShelterMainSlider {
               </button>
             </li>
           `;
-        }).join('')}
+        }).join("")}
       </ul>
     `;
+
+    DIV.style.transform = "translateX(0%)";
+    DIV.style.opacity = "1";
   }
 }
