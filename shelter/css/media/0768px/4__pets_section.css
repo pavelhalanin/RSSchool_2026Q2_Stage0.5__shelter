@@ -83,6 +83,9 @@
 
   .pets__slider {
     position: relative;
+    height: 435px;
+
+    overflow: hidden;
   }
 
   .pets__slider_arrows {

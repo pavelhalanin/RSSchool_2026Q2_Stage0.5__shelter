@@ -77,6 +77,10 @@
     margin: 0 auto !important;
   }
 
+  .pets__slider {
+    overflow: hidden;
+  }
+
   .pets__slider_arrows {
     width: 270px;
     margin: 0 auto;
