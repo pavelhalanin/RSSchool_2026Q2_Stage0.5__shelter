@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1279.5px) {
+  .donation__wrapper {
+    background-color: var(--color-light-l);
+  }
+
   .donation__wrapper_content {
     margin: 0 auto;
 
