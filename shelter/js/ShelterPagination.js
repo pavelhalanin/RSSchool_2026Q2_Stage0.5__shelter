@@ -7,7 +7,7 @@ class ShelterPagination {
   static id_last_page_button = "id_last_page_button";
 
   static async fetchData() {
-    const URI = "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json";
+    const URI = "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
     const RESPONSE = await fetch(URI);
 
     const HTTP_STATUS = RESPONSE.status;
