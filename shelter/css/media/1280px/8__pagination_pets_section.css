@@ -1,10 +1,8 @@
 @media screen and (min-width: 1280px) {
   .pagination_pets__content_wrapper {
     gap: 45px;
-  }
-
-  .pagination_pets__content_wrapper {
     padding: 80px 40px 100px;
+    overflow: hidden;
   }
 
   .pets__slider_cards[data-is-home="false"] > ul > li:nth-child(1),
