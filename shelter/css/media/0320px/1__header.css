@@ -122,7 +122,7 @@
 
   body[data-is-menu-opened="true"] .header__burger_menu {
     position: fixed;
-    top: 30px;
+    top: 45px;
     right: 20px;
     transform: rotate(90deg);
     transition: all 1.5s ease-in-out;
