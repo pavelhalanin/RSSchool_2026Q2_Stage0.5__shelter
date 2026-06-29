@@ -209,7 +209,11 @@
                 </div>
                 <div class="pets__slider_arrows">
                     <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.leftRight({command: 'right'})">
+                        <button
+                            id="slider_prev_button"
+                            class="pets__slider_arrow_button"
+                            onclick="ShelterMainSlider.leftRight({command: 'right'})"
+                        >
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M14 2V4H3V6L0 3L3 0V2H14Z" fill="#292929" />
@@ -217,7 +221,11 @@
                         </button>
                     </div>
                     <div class="pets__slider_arrow_button_block">
-                        <button class="pets__slider_arrow_button" onclick="ShelterMainSlider.leftRight({command: 'left'})">
+                        <button
+                            id="slider_next_button"
+                            class="pets__slider_arrow_button"
+                            onclick="ShelterMainSlider.leftRight({command: 'left'})"
+                        >
                             <svg width="14" height="6" viewBox="0 0 14 6" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 4V2L11 2V0L14 3L11 6V4L0 4Z" fill="#292929" />
@@ -230,7 +238,7 @@
                 Get to know the rest
             </a>
         </div>
-        <script src="./js/ShelterMainSlider.js?nocache=2026-06-29_13-00"></script>
+        <script src="./js/ShelterMainSlider.js?nocache=2026-06-29_13-35"></script>
         <script src="./js/ShelterModal.js?nocache=2026-06-29_13-00"></script>
         <script>
             ShelterMainSlider.leftRight();

@@ -1,12 +1,61 @@
 class ShelterMainSlider {
   static id_slider = "main_pets_slider";
+  static id_prev = "slider_prev_button";
+  static id_next = "slider_next_button";
 
   static sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  static disableButtons() {
+    const PREV_BUTTON = document.getElementById(this.id_prev);
+    const NEXT_BUTTON = document.getElementById(this.id_next);
+
+    if (!PREV_BUTTON) {
+      onsole.error(`Узел не найден: #${this.id_prev}`);
+      return;
+    }
+
+    if (!NEXT_BUTTON) {
+      onsole.error(`Узел не найден: #${this.id_next}`);
+      return;
+    }
+
+    PREV_BUTTON.setAttribute("disabled", "true");
+    NEXT_BUTTON.setAttribute("disabled", "true");
+
+    console.log(
+      new Date().toJSON().slice(0, 19).replace("T", " "),
+      "Buttons disabled for sliders",
+    );
+  }
+
+  static enableButtons() {
+    const PREV_BUTTON = document.getElementById(this.id_prev);
+    const NEXT_BUTTON = document.getElementById(this.id_next);
+
+    if (!PREV_BUTTON) {
+      onsole.error(`Узел не найден: #${this.id_prev}`);
+      return;
+    }
+
+    if (!NEXT_BUTTON) {
+      onsole.error(`Узел не найден: #${this.id_next}`);
+      return;
+    }
+
+    PREV_BUTTON.removeAttribute("disabled");
+    NEXT_BUTTON.removeAttribute("disabled");
+
+    console.log(
+      new Date().toJSON().slice(0, 19).replace("T", " "),
+      "Buttons enabled for sliders",
+    );
+  }
+
   static async fetchData() {
-    const URI = "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
+    const URI =
+      "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
     const RESPONSE = await fetch(URI);
 
     const HTTP_STATUS = RESPONSE.status;
@@ -66,7 +115,10 @@ class ShelterMainSlider {
 
     if (!DIV) {
       console.error(`Узел не найден: #${this.id_slider}`);
+      return;
     }
+
+    this.disableButtons();
 
     DIV.style.transform =
       params.command == "left" ? "translateX(200%)" : "translateX(-200%)";
@@ -96,5 +148,7 @@ class ShelterMainSlider {
 
     DIV.style.transform = "translateX(0%)";
     DIV.style.opacity = "1";
+    await this.sleep(1500);
+    this.enableButtons();
   }
 }
