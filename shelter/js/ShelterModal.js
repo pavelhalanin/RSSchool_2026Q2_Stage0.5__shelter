@@ -2,7 +2,7 @@ class ShelterModal {
   static id_modal = "pet_modal";
 
   static async fetchDataById(id) {
-    const URI = `/shelter/api/pets/${id}.json`;
+    const URI = `/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets/${id}.json`;
     const RESPONSE = await fetch(URI);
 
     const HTTP_STATUS = RESPONSE.status;

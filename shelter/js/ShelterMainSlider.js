@@ -6,7 +6,7 @@ class ShelterMainSlider {
   }
 
   static async fetchData() {
-    const URI = "/shelter/api/pets.json";
+    const URI = "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json";
     const RESPONSE = await fetch(URI);
 
     const HTTP_STATUS = RESPONSE.status;
