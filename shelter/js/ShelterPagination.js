@@ -7,7 +7,8 @@ class ShelterPagination {
   static id_last_page_button = "id_last_page_button";
 
   static async fetchData() {
-    const URI = "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
+    const URI =
+      "/RSSchool_2026Q2_Stage0.5__shelter/shelter/api/pets.json?nocache=2026-06-29_13-00";
     const RESPONSE = await fetch(URI);
 
     const HTTP_STATUS = RESPONSE.status;
@@ -103,7 +104,7 @@ class ShelterPagination {
         `${ID > (page - 1) * LIMIT && ID <= page * LIMIT} ===> ${ID} > ${(page - 1) * LIMIT} && ${ID} <= ${page * LIMIT}`,
       );
       if (ID > (page - 1) * LIMIT && ID <= page * LIMIT) {
-        ARRAY[i].style.display = "block";
+        ARRAY[i].style.display = "flex";
         continue;
       }
       ARRAY[i].style.display = "none";
